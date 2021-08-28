@@ -1,0 +1,543 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"left",
+				"left\tPyQt Functions"
+			],
+			[
+				"velocidad",
+				"velocidadeAlien"
+			],
+			[
+				"JOGAD",
+				"jogador"
+			],
+			[
+				"velocida",
+				"velocidadeBala"
+			],
+			[
+				"spr",
+				"Sprite\tpygame(sprite) "
+			],
+			[
+				"ke",
+				"key\tPyQt Functions"
+			],
+			[
+				"move",
+				"move_ip\tpygame(Rect) "
+			],
+			[
+				"d",
+				"def\tFunction"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"ima",
+				"imagem_player"
+			],
+			[
+				"no",
+				"now"
+			],
+			[
+				"Ta",
+				"TarefaRecorrente"
+			],
+			[
+				"t",
+				"tarefas"
+			],
+			[
+				"T",
+				"TarefaRecorrente"
+			],
+			[
+				"v",
+				"vx"
+			],
+			[
+				"F",
+				"Fire"
+			],
+			[
+				"mo",
+				"move_ip"
+			],
+			[
+				"p",
+				"projectile"
+			],
+			[
+				"re",
+				"rect"
+			],
+			[
+				"pos",
+				"pos_y"
+			],
+			[
+				"im",
+				"img_destruido"
+			],
+			[
+				"imag",
+				"image"
+			],
+			[
+				"y",
+				"y_rect"
+			],
+			[
+				"i",
+				"if\tIf Condition"
+			],
+			[
+				"x",
+				"x_yokohama"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"m",
+				"mapa"
+			],
+			[
+				"r",
+				"tank_rect"
+			],
+			[
+				"co",
+				"colliderect"
+			],
+			[
+				"cor_",
+				"cor_vermelha"
+			],
+			[
+				"c",
+				"cor_vermelha"
+			],
+			[
+				"fo",
+				"fonte_ganhou"
+			],
+			[
+				"ret",
+				"ret2"
+			],
+			[
+				"su",
+				"sup2"
+			],
+			[
+				"s",
+				"sup"
+			],
+			[
+				"de",
+				"descriçao"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"P",
+				"Projeto"
+			],
+			[
+				"yo",
+				"Yokohama_tank"
+			],
+			[
+				"M",
+				"Move"
+			],
+			[
+				"tare",
+				"tarefa"
+			],
+			[
+				"ter",
+				"tarefa"
+			],
+			[
+				"concl",
+				"concluir"
+			],
+			[
+				"b",
+				"button"
+			],
+			[
+				"ma",
+				"Map"
+			],
+			[
+				"wi",
+				"window"
+			],
+			[
+				"a",
+				"ace"
+			],
+			[
+				"C",
+				"Carro"
+			],
+			[
+				"so",
+				"soma2"
+			],
+			[
+				"mod",
+				"modulo1_pacote2"
+			],
+			[
+				"cal",
+				"calc_preço_final"
+			],
+			[
+				"f",
+				"fator_mult"
+			],
+			[
+				"impo",
+				"imposto_x"
+			],
+			[
+				"pri",
+				"primeiro"
+			],
+			[
+				"boa",
+				"boa_tarde"
+			],
+			[
+				"l",
+				"lista"
+			],
+			[
+				"S",
+				"soma_3"
+			],
+			[
+				"n",
+				"numeros"
+			],
+			[
+				"soma",
+				"soma_3"
+			],
+			[
+				"if",
+				"if\tIf Condition"
+			],
+			[
+				"dir",
+				"dir1"
+			],
+			[
+				"di",
+				"dir3"
+			],
+			[
+				"sh",
+				"shoot"
+			],
+			[
+				"cl",
+				"classe"
+			],
+			[
+				"Y",
+				"y_yokohama"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"y_",
+				"y_shot"
+			],
+			[
+				"sp",
+				"speed_shot"
+			],
+			[
+				"sho",
+				"shoot"
+			],
+			[
+				"spe",
+				"speed"
+			],
+			[
+				"tr",
+				"True"
+			],
+			[
+				"_",
+				"_1_"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"vie",
+				"View: Toggle Menu"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Contr",
+				"Package Control: List Packages"
+			],
+			[
+				"view",
+				"View: Toggle Side Bar"
+			],
+			[
+				"v",
+				"View Package File"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 199.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/luiz/Área de Trabalho/python/udemy/POO/herança.py",
+		"/home/luiz/Área de Trabalho/python/udemy/POO/metodos_privados.py",
+		"/home/luiz/Área de Trabalho/python/udemy/POO/teste_poo.py",
+		"/home/luiz/Área de Trabalho/jogo_eric/pacote_jogo/subpacote_jogo/__init__.py",
+		"/home/luiz/Área de Trabalho/Shuter/SpaceShuter.py",
+		"/home/luiz/Área de Trabalho/game/jogo_inicio.py",
+		"/home/luiz/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+		"/home/luiz/Área de Trabalho/yokohama/main/Main.py",
+		"/home/luiz/Área de Trabalho/yokohama/package/__init__.py",
+		"/home/luiz/Área de Trabalho/python/udemy/modulo/pacote1/modulo1.py",
+		"/home/luiz/Área de Trabalho/python/udemy/modulo/pacote1/modulo2.py",
+		"/home/luiz/Área de Trabalho/python/udemy/modulo/pacote2/modulo1.py",
+		"/home/luiz/Área de Trabalho/python/udemy/modulo/pacote_v1.py",
+		"/home/luiz/Área de Trabalho/python/udemy/modulo/pacote_v3.py",
+		"/home/luiz/Área de Trabalho/python/udemy/modulo/pacote_v4.py",
+		"/home/luiz/Área de Trabalho/python/udemy/modulo/calc/__init__.py",
+		"/home/luiz/Área de Trabalho/python/udemy/pacote/modulo1.py",
+		"/home/luiz/Área de Trabalho/python/udemy/pacote/__init__.py",
+		"/home/luiz/Área de Trabalho/python/udemy/modulo/pacote2/__init__.py",
+		"/home/luiz/Área de Trabalho/python/udemy/callable_unpacking.py",
+		"/home/luiz/Área de Trabalho/python/udemy/unpacking.py",
+		"/home/luiz/Área de Trabalho/python/udemy/callable.py",
+		"/home/luiz/Área de Trabalho/python/udemy/funcoes1.py",
+		"/home/luiz/Área de Trabalho/python/udemy/unpackingnomeado.py",
+		"/home/luiz/Área de Trabalho/python/udemy/exemplo for.py",
+		"/home/luiz/Área de Trabalho/python/udemy/comprehension.py",
+		"/home/luiz/Área de Trabalho/python/udemy/aulacsv/arquivo.csv",
+		"/home/luiz/Área de Trabalho/python/udemy/aulacsv/moita.py",
+		"/home/luiz/Área de Trabalho/yokohama/yokohama.py",
+		"/home/luiz/.config/sublime-text-3/Packages/User/python3.sublime-build"
+	],
+	"find":
+	{
+		"height": 83.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 83.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/python3.sublime-build",
+	"project": "Main.sublime-project",
+	"replace":
+	{
+		"height": 162.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
