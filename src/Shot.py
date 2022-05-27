@@ -9,7 +9,7 @@ class Bala(pygame.sprite.Sprite):
         self.rect = self.imagem[self.posbala].get_rect()
 
     
-        self.rect.left, self.rect.top = posiçao
+        self.rect.left, self.rect.top = posiçao[0], posiçao[1]
         
         self.velocidadeBala = 10
         self.trajeto = trajeto

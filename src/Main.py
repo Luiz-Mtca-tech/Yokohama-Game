@@ -20,13 +20,14 @@ def Main():
     
     objetos = Objetos_Mapa()
     
-    jogador = Jogador(altura / 2, largura / 2)
+    jogador = Jogador(45, 20)
     velocidadex = 0
     velocidadey = 0
     render_sprite = None
     movendo_jogador = None
     
-    enimigo = Enimigo()
+    enimigos = []#Enimigo(750, 100), Enimigo(750, 550)]
+    #enimigo = Enimigo()
     
     while True :
         for evento in pygame.event.get():
@@ -39,12 +40,14 @@ def Main():
                 if evento.key == pygame.K_a:
                     velocidadex = -5
                     render_sprite = 2
+                    
                     jogador.posImagem = 2
                     movendo_jogador = True
                     
                 if evento.key == pygame.K_s:
                     velocidadey = 5
                     render_sprite = 4
+                    
                     jogador.posImagem = 4
                     movendo_jogador = True
                     
@@ -88,38 +91,54 @@ def Main():
         #aqui estão todas funções relacionadas ao jogador
         #aos enimigos e os demais objetos
         mapa.colocar(tela)
-        mapa.mover_mapa(velocidadex, velocidadey)
-        
-        objetos.colocar(tela)
-        
-        #jogador.mover(velocidadex, velocidadey)      
+        objetos.colocar(tela,mapa.posicaoX,mapa.posicaoY)
         jogador.colocar(tela, render_sprite)
+
+        print(f'x: {jogador.posX}, y: {jogador.posY}')
+        jogador.posX += velocidadey
+        jogador.posY += velocidadey
+        if jogador.posX > 380:
+            if jogador.FimDeJogo == False:
+                mapa.mover_mapa(-velocidadex, -velocidadey)
+        if jogador.posY > 280:
+            if jogador.FimDeJogo == False:
+                mapa.mover_mapa(-velocidadex, -velocidadey)           
+        if jogador.posY > 280 or jogador.posX > 380:
+            if jogador.FimDeJogo == False:
+                mapa.mover_mapa(-velocidadex, -velocidadey)
         
-        enimigo.colocar(tela)
-        enimigo.comportamento()        
+        else :
+            mapa.posicaoX = mapa.posicaoX
+            mapa.posicaoY = mapa.posicaoY
+            jogador.mover(velocidadex, velocidadey)
         
+        for i in enimigos:
+            i.colocar(tela, mapa.posicaoX,mapa.posicaoY)
+            i.comportamento()      
         
+
         if len(jogador.listaBalas) > 0:
             for x in jogador.listaBalas :
                 x.colocar(tela)
                 x.trejetoria()
-                if x.rect.colliderect(enimigo.rect):
-                    if enimigo.vivo == True:
-                        enimigo.morrer()
+                for i in enimigos :
+                    if x.rect.colliderect(i.rect):
+                        if i.vivo == True:
+                            i.morrer()
                         
                 if x.rect.left <= 0 or x.rect.left >= largura or x.rect.top <= 0 or x.rect.top >= altura:
                     jogador.listaBalas.remove(x) 
             
-            
-        if len(enimigo.listaBala) > 0:
-            for x in enimigo.listaBala:
-                x.colocar(tela)
-                x.trejetoria()
-                if x.rect.colliderect(jogador.rect):
-                    jogador.perdeu()
-                
-                if x.rect.left <= 0 or x.rect.left >= largura or x.rect.top <= 0 or x.rect.top >= altura:
-                    enimigo.listaBala.remove(x)
+        for i in enimigos:    
+            if len(i.listaBala) > 0:
+                for x in i.listaBala:
+                    x.colocar(tela)
+                    x.trejetoria()
+                    if x.rect.colliderect(jogador.rect):
+                        jogador.perdeu()
+                    
+                    if x.rect.left <= 0 or x.rect.left >= largura or x.rect.top <= 0 or x.rect.top >= altura:
+                        i.listaBala.remove(x)
 
         pygame.display.update()        
 Main()    

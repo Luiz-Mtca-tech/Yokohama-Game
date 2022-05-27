@@ -3,7 +3,7 @@ from Shot import Bala
 from random import choice, randint
 
 class Enimigo(pygame.sprite.Sprite):
-    def __init__(self):
+    def __init__(self, posX, posY):
         self.imagem = {1: pygame.image.load('imagens/sauders.png'),
                        2: pygame.image.load('imagens/sauders_left.png'),
                        3: pygame.image.load('imagens/sauders_right.png'),
@@ -12,14 +12,14 @@ class Enimigo(pygame.sprite.Sprite):
         self.posImagem = 1
         self.rect = self.imagem[self.posImagem].get_rect()
         
-        self.rect.left, self.rect.top = 500, 500
+        self.rect.left, self.rect.top = posX, posY
         self.vivo = True
-        self.velocidade = 3
+        self.velocidade = 2
         self.listaBala = []
         self.lista_inimigos = []
         self.contador = 0
-        self.direita, self.esquerda, self.cima, self.baixo = False, False, True, False
-        
+        self.direita, self.esquerda, self.cima, self.baixo = False, False, True, False 
+        self.jogadorx, self.jogadory = 0, 0       
     def comportamento(self):
         if self.vivo == True:
             
@@ -42,20 +42,20 @@ class Enimigo(pygame.sprite.Sprite):
         
     
         
-    def colocar(self, superficie):
-        
+    def colocar(self, superficie, jogadorx, jogadory):
+        self.jogadory, self.jogadorx = jogadory, jogadorx
         if self.vivo == True:
-            superficie.blit(self.imagem[self.posImagem], [self.rect.left, self.rect.top])         
+            superficie.blit(self.imagem[self.posImagem], [self.rect.left  + jogadorx, self.rect.top + jogadory])         
         else :
-            superficie.blit(self.imagem[self.posImagem], [self.rect.left, self.rect.top])
+            superficie.blit(self.imagem[self.posImagem], [self.rect.left + jogadorx, self.rect.top + jogadory])
         
     def __atacar(self):
         if (randint(0,100)) <= 2 :
             self.__disparar()
        
     def __disparar(self):
-        x, y = self.rect.centerx, self.rect.centery
-        bala_inimigo = Bala(self.rect.center, self.posImagem)
+        x, y = self.rect.centerx + self.jogadorx, self.rect.centery + self.jogadory
+        bala_inimigo = Bala([x, y], self.posImagem)
         self.listaBala.append(bala_inimigo)     
     
     def morrer(self):
@@ -114,11 +114,7 @@ class Enimigo(pygame.sprite.Sprite):
             self.esquerda = choice([True, False])     
             self.cima = choice([True, False])     
             self.baixo = choice([True, False])
-            
-            
-    def __adicionar_inimigos(self):
-        pass
-        #self.lista_inimigos.append(classe)             
+             
              
          
          

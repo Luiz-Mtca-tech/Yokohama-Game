@@ -1,10 +1,12 @@
 import pygame
 from Shot import Bala
+from map import Mapa
 
 
 class Jogador(pygame.sprite.Sprite):
     def __init__(self, posX, posY):
         
+        #posição no mapa
         self.posX = posX
         self.posY = posY
         
@@ -16,7 +18,7 @@ class Jogador(pygame.sprite.Sprite):
         self.posImagem = 4
         
         self.rect = self.listaImagens[self.posImagem].get_rect()
-        self.rect.left, self.rect.top = self.posX / 2, self.posY / 2
+        self.rect.left, self.rect.top = 380,280
         
         self.velocidade = 0.5
         self.listaBalas = []
@@ -40,6 +42,7 @@ class Jogador(pygame.sprite.Sprite):
     def mover(self, vx, vy):
         if self.FimDeJogo == False:
             self.rect.move_ip(vx, vy)
+
         
     def disparar(self):
         if self.FimDeJogo == False:
@@ -56,7 +59,7 @@ class Jogador(pygame.sprite.Sprite):
                                  pygame.image.load('imagens/eplosao5.png'),
                                  pygame.image.load('imagens/moita.png')]
             self.posImagem = 0        
-           
+          
             
             
             

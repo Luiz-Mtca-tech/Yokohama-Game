@@ -19,14 +19,14 @@ class Objetos_Mapa(pygame.sprite.Sprite):
         
         self.lista_objtos = []
         
-    def colocar(self, superficie):
+    def colocar(self, superficie, jogadorx, jogadory):
             
             
-            superficie.blit(self.imagem[0], [77, 32])
-            superficie.blit(self.imagem[1], [239, 41])
-            superficie.blit(self.imagem[2], [155, 32])
-            superficie.blit(self.imagem[3], [167, 347])
-            superficie.blit(self.imagem[4], [180, 100])
+            superficie.blit(self.imagem[0], [77 + jogadorx, 32 + jogadory])
+            superficie.blit(self.imagem[1], [239+ jogadorx, 41 + jogadory])
+            superficie.blit(self.imagem[2], [155+ jogadorx, 32 + jogadory])
+            superficie.blit(self.imagem[3], [167+ jogadorx, 347 + jogadory])
+            superficie.blit(self.imagem[4], [180+ jogadorx, 100 + jogadory])
             '''superficie.blit(self.imagem[5], [140, 100])
             superficie.blit(self.imagem[6], [120, 100])
             superficie.blit(self.imagem[7], [400, 100])
